@@ -2,6 +2,7 @@ import styles from './index.less';
 import { Button, Row, Col, Carousel, Card } from 'antd';
 import { Link } from 'umi';
 import React, { useState } from 'react';
+import Login from './login/Login';
 
 const IndexPage: React.FC = () => {
   const [clicked, setClicked] = useState(false);
@@ -14,12 +15,14 @@ const IndexPage: React.FC = () => {
     <div className={styles.bigBox}>
       <button
         onClick={onClick}
+        style={{ zIndex: clicked ? 0 : 5 }}
         className={`${styles['bubbly-button']} ${
           clicked ? styles['bubbly-button-animate'] : ''
         }`}
       >
         Click me!
       </button>
+      <Login clicked={clicked} />
     </div>
   );
 };
