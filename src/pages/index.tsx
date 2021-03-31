@@ -15,7 +15,7 @@ const IndexPage: React.FC = () => {
     <div className={styles.bigBox}>
       <button
         onClick={onClick}
-        style={{ zIndex: clicked ? 0 : 5 }}
+        style={{ zIndex: clicked ? 0 : 5, fontSize: '18px', fontWeight: 800 }}
         className={`${styles['bubbly-button']} ${
           clicked ? styles['bubbly-button-animate'] : ''
         }`}
