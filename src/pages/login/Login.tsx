@@ -47,7 +47,7 @@ const Login: React.FC<PropsInte> = ({ clicked }) => {
             label="学号"
             rules={[{ required: true, message: '学号不可为空' }]}
           >
-            <Input placeholder="请输入学号，王老师也是哦" />
+            <Input placeholder="请输入学号，王老师也是哦~" />
           </Form.Item>
           <Form.Item
             name="password"
